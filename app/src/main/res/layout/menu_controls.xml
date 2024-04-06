@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="2"
+    android:padding="10dp"
+    android:useDefaultMargins="true">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_row="0"
+        android:layout_columnSpan="2"
+        android:layout_weight="1"
+        android:text="MagicSquare"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/buttonPlayGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:onClick="playGame"
+        android:text="Play Game"/>
+
+    <Button
+        android:id="@+id/buttonParameter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:onClick="parameter"
+        android:text="Parameter"/>
+
+    <Button
+        android:id="@+id/buttonAbout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:onClick="about"
+        android:text="About"/>
+
+    <Button
+        android:id="@+id/buttonQuit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_columnWeight="1"
+        android:onClick="quit"
+        android:text="Quit"/>
+
+</GridLayout>
